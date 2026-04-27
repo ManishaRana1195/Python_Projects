@@ -12,4 +12,9 @@ Minesweeper is a single-player puzzle game where the goal is to clear a grid of 
 
 <img src="/images/minesweeper2.png" width="250" alt="Thumbnail">
 
+### Sudoku game
+Sudoku is a logic-based number-placement puzzle played on a 9x9 grid divided into nine 3x3 subgrids. The game is won when every empty cell is correctly filled with a digit from 1 to 9. To solve it, you must ensure each number appears exactly once in every row, column, and 3x3 box without any repetition or guesswork. 
+
+<img src="/images/sudoku.png" width="250" alt="Thumbnail">          <img src="/images/sudoku_solved.png" width="250" alt="Thumbnail">
+
 
