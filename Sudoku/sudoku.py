@@ -4,6 +4,7 @@ class Sudoku:
         self.size = 9
         self.row_sets = [{} for _ in range(self.size)]
         self.col_sets = [{} for _ in range(self.size)]
+        self.box_sets = [{} for _ in range(self.size)]
         self.board = [[" " for i in range(self.size)] for j in range(self.size)]
         pass
 
