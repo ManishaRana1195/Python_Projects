@@ -9,17 +9,16 @@ class Image:
         if x_pixels and y_pixels and num_channels:
             self.x_pixels = x_pixels
             self.y_pixels = y_pixels
-            self.num_channels = self.num_channels  # number of channels(R, G, B)
-            self.image = np.zeros((x_pixels, y_pixels, num_channels))
+            self.num_channels = num_channels  # number of channels(R, G, B)
+            self.array = np.zeros((x_pixels, y_pixels, num_channels))
         elif filename:
-            self.image = self.read(filename)
-            print(self.image.shape)
-            self.x_pixels, self.y_pixels, self.num_channels = self.image.shape
+            self.array = self.read(filename)
+            self.x_pixels, self.y_pixels, self.num_channels = self.array.shape
         else:
             raise ValueError("You need to either specify a filename OR the dimensions of the image ")
 
     def read(self, filename, gamma=2.2):
-        # convert image file into numpy array
+        # convert image into numpy array
         # image format - (width, height, stream of rows of pixels, info)
         image = png.Reader(self.input_path + filename).asFloat()
         # convert pixel row data into np array it is just stream/generator
@@ -32,11 +31,11 @@ class Image:
         return temp
 
     def write(self, filename, gamma=2.2):
-        temp = np.clip(self.image, 0, 1)
+        temp = np.clip(self.array, 0, 1)
         y, x = temp.shape[0], temp.shape[1]
         temp = temp.reshape(y, x * 3)
         writer = png.Writer(x, y)
         with open(self.output_path+filename, "wb") as f: 
             writer.write(f, 255*(temp**(1/gamma)))
-        self.image.reshape(y, x, 3) 
+        self.array.reshape(y, x, 3) 
 
