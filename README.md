@@ -21,9 +21,9 @@ Python implementation of image filters. Use Python to adjust brightness and cont
 - png.py: pure Python PNG `Reader` and `Writer` classes from Johann C. Rocholl
 - transform.py: implemented image filter functions
 
-<img src="/images/input/lake.png" width="250" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_brighten.png" width="250" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_inc_contrast.png" width="250" alt="Thumbnail">                    
+<img src="/images/input/lake.png" width="25%" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_brighten.png" width="25%" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_inc_contrast.png" width="25%" alt="Thumbnail">                    
 
-<img src="/images/input/city.png" width="250" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_darken.png" width="250" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_blur_7.png" width="250" alt="Thumbnail">                           
+<img src="/images/input/city.png" width="25%" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_darken.png" width="25%" alt="Thumbnail"> &emsp; &emsp; <img src="/images/output/img_blur_7.png" width="25%" alt="Thumbnail">                           
 
 
 
