@@ -17,4 +17,9 @@ Sudoku is a logic-based number-placement puzzle played on a 9x9 grid divided int
 
 <img src="/images/sudoku.png" width="250" alt="Thumbnail">          <img src="/images/sudoku_solved.png" width="250" alt="Thumbnail">
 
+### PyPhotoshop
+Python implementation of image filters. Use Python to adjust brightness and contrast, add blur, and detect edges! You will find these files:
+- image.py: contains the `Image` class that will read and write the images using the PNG `Writer` and `Reader`
+- png.py: pure Python PNG `Reader` and `Writer` classes from Johann C. Rocholl
+- transform.py: implemented image filter functions
 
